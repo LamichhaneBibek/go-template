@@ -50,6 +50,7 @@ The application should be accessible at http://localhost:8080.
 
 ## Project Structure
 
+```
 ./
 ├── cmd
 │   └── main.go
@@ -91,6 +92,7 @@ The application should be accessible at http://localhost:8080.
 │       └── user_views.go
 ├── Makefile
 └── README.md
+```
 
 ## Contributing
 
