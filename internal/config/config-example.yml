@@ -1,0 +1,36 @@
+server:
+  internalPort: 8080
+  externalPort: 8080
+  runMode: debug
+
+logger:
+  filePath: ../logs/
+  encoding: json
+  level: debug
+  logger: zerolog
+
+postgres:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: yourpassword
+  databaseName: template
+  sslMode: disable
+  maxOpenConns: 100
+  maxIdleConns: 15
+  connMaxLifetime: 5
+
+password:
+  includeChars: true
+  includeNumbers: true
+  minLength: 8
+  maxLength: 32
+  includeUpperCase: true
+  includeLowerCase: true
+
+jwt:
+  accessTokenExpireDuration: 15
+  refreshTokenExpireDuration: 30
+  secret: "secret"
+  refreshSecret: "refreshSecret"
+
